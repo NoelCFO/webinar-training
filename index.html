@@ -3,141 +3,304 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>You're In - True North Finance Group</title>
+<title>Free CFO Training - True North Finance Group</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
 <style>
-#tnfg-ty,#tnfg-ty *{box-sizing:border-box;}
-#tnfg-ty{position:relative;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:#060A06 !important;color:#ffffff !important;overflow-x:hidden;font-size:17px;min-height:100vh;width:100%;display:block;}
-#tnfg-ty h1,#tnfg-ty h2,#tnfg-ty h3{font-family:'Playfair Display',serif;color:#ffffff;}
-#tnfg-ty .bg-layer{position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 70% 50% at 10% 0%,rgba(26,107,53,0.25) 0%,transparent 60%),radial-gradient(ellipse 50% 60% at 90% 100%,rgba(200,150,42,0.09) 0%,transparent 55%),linear-gradient(160deg,#060A06 0%,#0A160A 55%,#060A06 100%);}
-#tnfg-ty .grid-layer{position:absolute;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(200,150,42,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(200,150,42,0.035) 1px,transparent 1px);background-size:72px 72px;}
-#tnfg-ty .top-bar{position:relative;z-index:20;background:linear-gradient(90deg,#C8962A 0%,#E4B547 50%,#C8962A 100%);padding:10px 20px;display:flex;align-items:center;justify-content:center;gap:10px;font-size:11.5px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#0D4A1F;}
-#tnfg-ty .pulse{width:8px;height:8px;background:#0D4A1F;border-radius:50%;animation:ty-pulse 1.6s ease-in-out infinite;}
-@keyframes ty-pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.5);opacity:.5}}
-#tnfg-ty .nav{position:relative;z-index:20;max-width:1120px;margin:0 auto;padding:18px 28px;display:flex;align-items:center;justify-content:center;}
-#tnfg-ty .brand-name{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:#F5D98A;letter-spacing:0.02em;line-height:1.2;text-align:center;}
-#tnfg-ty .brand-sub{font-size:10px;color:rgba(255,255,255,0.6);letter-spacing:0.12em;text-transform:uppercase;text-align:center;}
-#tnfg-ty .confirm-wrap{position:relative;z-index:10;max-width:720px;margin:0 auto;padding:64px 28px 48px;text-align:center;}
-#tnfg-ty .check-badge{width:80px;height:80px;background:linear-gradient(135deg,#1A6B35,#2A8A47);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 28px;font-size:36px;box-shadow:0 12px 40px rgba(26,107,53,0.5);}
-#tnfg-ty .eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(200,150,42,0.1);border:1px solid rgba(200,150,42,0.3);border-radius:100px;padding:10px 24px;font-size:18px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#ffffff;margin-bottom:22px;}
-#tnfg-ty h1{font-family:'Playfair Display',serif;font-size:clamp(42px,5vw,72px);font-weight:900;line-height:1.05;margin-bottom:18px;color:#ffffff;}
-#tnfg-ty h1 em{font-style:italic;color:#E4B547;}
-#tnfg-ty .confirm-sub{font-size:18px;line-height:1.8;color:#ffffff;max-width:580px;margin:0 auto 12px;}
-#tnfg-ty .confirm-spam{font-size:16px;line-height:1.8;color:#ffffff;max-width:580px;margin:0 auto 40px;}
-#tnfg-ty .event-box{background:linear-gradient(140deg,#1A5C30 0%,#0F3D1E 100%);border:1px solid rgba(42,138,71,0.4);border-radius:14px;padding:32px 36px;max-width:560px;margin:0 auto 48px;box-shadow:0 8px 32px rgba(0,0,0,0.4);}
-#tnfg-ty .event-box h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:#E4B547;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:20px;}
-#tnfg-ty .event-row{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08);}
-#tnfg-ty .event-row:last-child{border-bottom:none;}
-#tnfg-ty .event-icon{font-size:24px;flex-shrink:0;width:32px;text-align:center;}
-#tnfg-ty .event-text strong{display:block;font-size:17px;font-weight:700;color:#ffffff;margin-bottom:3px;}
-#tnfg-ty .event-text span{font-size:15px;color:#ffffff;}
-#tnfg-ty .bonuses-wrap{position:relative;z-index:10;max-width:720px;margin:0 auto;padding:0 28px 56px;}
-#tnfg-ty .bonuses-wrap h2{font-family:'Playfair Display',serif;font-size:clamp(22px,2.5vw,32px);font-weight:700;text-align:center;margin-bottom:28px;color:#ffffff;}
-#tnfg-ty .bonus-list{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-#tnfg-ty .bonus-item{background:linear-gradient(140deg,#1A5C30 0%,#0F3D1E 100%);border:1px solid rgba(42,138,71,0.4);border-radius:10px;padding:22px;display:flex;gap:14px;align-items:flex-start;box-shadow:0 4px 16px rgba(0,0,0,0.3);}
-#tnfg-ty .bonus-num{background:#C8962A;color:#0D4A1F;font-size:10px;font-weight:800;letter-spacing:0.08em;padding:3px 8px;border-radius:3px;flex-shrink:0;margin-top:2px;}
-#tnfg-ty .bonus-item h4{font-size:14px;font-weight:700;color:#ffffff;margin-bottom:4px;}
-#tnfg-ty .bonus-item p{font-size:13px;color:rgba(255,255,255,0.8);line-height:1.5;margin:0;}
-#tnfg-ty .gold-divider{position:relative;z-index:10;max-width:720px;margin:0 auto;padding:0 28px 56px;}
-#tnfg-ty .gold-divider hr{border:none;border-top:1px solid rgba(200,150,42,0.2);}
-#tnfg-ty .upsell-wrap{position:relative;z-index:10;max-width:720px;margin:0 auto;padding:0 28px 80px;text-align:center;}
-#tnfg-ty .upsell-box{background:linear-gradient(135deg,rgba(26,107,53,0.18) 0%,rgba(200,150,42,0.08) 100%);border:1px solid rgba(200,150,42,0.3);border-radius:16px;padding:52px 40px;}
-#tnfg-ty .upsell-label{font-size:13px;letter-spacing:0.18em;text-transform:uppercase;color:#ffffff;display:block;margin-bottom:14px;font-weight:700;}
-#tnfg-ty .upsell-box h2{font-family:'Playfair Display',serif;font-size:clamp(24px,3vw,38px);font-weight:900;color:#F5D98A;margin-bottom:16px;line-height:1.15;}
-#tnfg-ty .upsell-box p{font-size:17px;color:rgba(255,255,255,0.88);max-width:480px;margin:0 auto 32px;line-height:1.75;}
-#tnfg-ty .upsell-list{list-style:none;padding:0;margin:0 auto 36px;max-width:400px;text-align:left;}
-#tnfg-ty .upsell-list li{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:18px;color:rgba(255,255,255,0.9);line-height:1.5;}
-#tnfg-ty .upsell-list li:last-child{border-bottom:none;}
-#tnfg-ty .uc{color:#E4B547;flex-shrink:0;margin-top:2px;}
-#tnfg-ty .cal-btn{display:inline-flex;align-items:center;gap:12px;background:linear-gradient(135deg,#C8962A,#E4B547);color:#0D4A1F;font-weight:800;font-size:20px;padding:26px 56px;border-radius:8px;border:none;cursor:pointer;text-transform:uppercase;letter-spacing:0.07em;box-shadow:0 12px 40px rgba(200,150,42,0.4);font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;text-decoration:none;}
-#tnfg-ty .cal-note{font-size:16px;color:rgba(255,255,255,0.7);margin-top:14px;}
-#tnfg-ty .tnfg-footer{position:relative;z-index:10;background:rgba(0,0,0,0.5);border-top:1px solid rgba(200,150,42,0.1);padding:32px 28px;text-align:center;}
-#tnfg-ty .footer-links{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-bottom:14px;}
-#tnfg-ty .footer-links a{font-size:14px;color:#ffffff;text-decoration:none;}
-#tnfg-ty .footer-copy{font-size:15px;color:#ffffff;margin-top:10px;font-style:italic;}
-#tnfg-ty .fade-up{animation:ty-fadeUp .65s ease both;}
-#tnfg-ty .d1{animation-delay:.1s;}#tnfg-ty .d2{animation-delay:.25s;}#tnfg-ty .d3{animation-delay:.4s;}#tnfg-ty .d4{animation-delay:.55s;}
-@keyframes ty-fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-@media(max-width:600px){
-  #tnfg-ty .bonus-list{grid-template-columns:1fr;}
-  #tnfg-ty .upsell-box{padding:36px 24px;}
-  #tnfg-ty .cal-btn{padding:18px 32px;font-size:14px;}
+#tnfg-page,#tnfg-page *{box-sizing:border-box;}
+#tnfg-page{position:relative;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:#060A06 !important;color:#ffffff !important;overflow-x:hidden;font-size:17px;min-height:100vh;width:100%;display:block;}
+#tnfg-page h1,#tnfg-page h2,#tnfg-page h3{font-family:'Playfair Display',serif;color:#ffffff;}
+#tnfg-page .bg-layer{position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 70% 50% at 10% 0%,rgba(26,107,53,0.25) 0%,transparent 60%),radial-gradient(ellipse 50% 60% at 90% 100%,rgba(200,150,42,0.09) 0%,transparent 55%),linear-gradient(160deg,#060A06 0%,#0A160A 55%,#060A06 100%);}
+#tnfg-page .grid-layer{position:absolute;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(200,150,42,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(200,150,42,0.035) 1px,transparent 1px);background-size:72px 72px;}
+#tnfg-page .top-bar{position:relative;z-index:20;background:linear-gradient(90deg,#C8962A 0%,#E4B547 50%,#C8962A 100%);padding:10px 20px;display:flex;align-items:center;justify-content:center;gap:10px;font-size:11.5px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#0D4A1F;}
+#tnfg-page .pulse{width:8px;height:8px;background:#0D4A1F;border-radius:50%;animation:tnfg-pulse 1.6s ease-in-out infinite;}
+@keyframes tnfg-pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.5);opacity:.5}}
+#tnfg-page .nav{position:relative;z-index:20;max-width:1120px;margin:0 auto;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;}
+#tnfg-page .brand-name{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:#F5D98A;letter-spacing:0.02em;line-height:1.2;}
+#tnfg-page .brand-sub{font-size:10px;color:rgba(255,255,255,0.6);letter-spacing:0.12em;text-transform:uppercase;}
+#tnfg-page .nav-tag{background:rgba(200,150,42,0.12);border:1px solid rgba(200,150,42,0.3);border-radius:4px;padding:6px 14px;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#E4B547;}
+#tnfg-page .hero{position:relative;z-index:10;max-width:1120px;margin:0 auto;padding:48px 28px 60px;display:grid;grid-template-columns:1.15fr 0.85fr;gap:56px;align-items:start;}
+#tnfg-page .eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(200,150,42,0.1);border:1px solid rgba(200,150,42,0.3);border-radius:100px;padding:6px 16px;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#E4B547;margin-bottom:22px;}
+#tnfg-page .blink{width:5px;height:5px;background:#E4B547;border-radius:50%;animation:tnfg-blink 2s infinite;}
+@keyframes tnfg-blink{0%,100%{opacity:1}50%{opacity:.2}}
+#tnfg-page h1{font-family:'Playfair Display',serif;font-size:clamp(34px,3.8vw,60px);font-weight:900;line-height:1.05;letter-spacing:-0.01em;margin-bottom:18px;color:#ffffff;}
+#tnfg-page h1 em{font-style:italic;color:#E4B547;}
+#tnfg-page .hero-sub{font-size:21px;line-height:1.85;color:rgba(255,255,255,0.9);max-width:520px;margin-bottom:32px;}
+#tnfg-page .learn-list{list-style:none;margin-bottom:34px;padding:0;}
+#tnfg-page .learn-list li{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px solid rgba(255,255,255,0.08);font-size:18px;color:rgba(255,255,255,0.92);line-height:1.55;}
+#tnfg-page .learn-list li:last-child{border-bottom:none;}
+#tnfg-page .lc{color:#E4B547;font-size:18px;flex-shrink:0;margin-top:2px;}
+#tnfg-page .proof-row{display:flex;gap:20px;flex-wrap:wrap;}
+#tnfg-page .proof-item{display:flex;align-items:center;gap:6px;font-size:15px;color:#E4B547;font-weight:700;}
+#tnfg-page .form-box{background:#FAF6EE;color:#0D4A1F;border-radius:14px;padding:36px 32px;box-shadow:0 24px 64px rgba(0,0,0,0.55),0 0 0 1px rgba(26,107,53,0.2);position:sticky;top:24px;}
+#tnfg-page .countdown-wrap{background:#0D4A1F;border:1px solid rgba(200,150,42,0.3);border-radius:8px;padding:14px 18px;margin-bottom:22px;text-align:center;}
+#tnfg-page .cd-label{font-size:9.5px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:8px;}
+#tnfg-page .cd-units{display:flex;justify-content:center;gap:8px;}
+#tnfg-page .cd-unit{text-align:center;}
+#tnfg-page .cd-num{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:#E4B547;line-height:1;display:block;}
+#tnfg-page .cd-sub{font-size:8px;color:rgba(255,255,255,0.3);letter-spacing:0.1em;text-transform:uppercase;}
+#tnfg-page .cd-sep{font-size:20px;color:rgba(255,255,255,0.15);align-self:center;padding-bottom:12px;}
+#tnfg-page .form-title{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:#0D4A1F;margin-bottom:6px;line-height:1.25;}
+#tnfg-page .form-date{font-size:15px;color:#3A5A3A;margin-bottom:18px;line-height:1.5;}
+#tnfg-page .date-block{background:#E8F0E8;border-radius:7px;padding:14px 16px;margin-bottom:18px;display:flex;align-items:center;gap:12px;}
+#tnfg-page .date-block .icon{font-size:24px;}
+#tnfg-page .date-block h4{font-size:16px;font-weight:700;color:#0D4A1F;margin-bottom:2px;}
+#tnfg-page .date-block p{font-size:14px;color:#4A6A4A;margin:0;}
+#tnfg-page .field{margin-bottom:14px;}
+#tnfg-page .field label{display:block;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#0D4A1F;margin-bottom:5px;opacity:.7;}
+#tnfg-page .field input,#tnfg-page .field select{width:100%;padding:14px 16px;border:1.5px solid #C8D8C8;border-radius:6px;font-size:15px;color:#0D4A1F;background:#FAFDF8;outline:none;appearance:none;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;}
+#tnfg-page .field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='7' viewBox='0 0 11 7'%3E%3Cpath d='M1 1l4.5 4.5L10 1' stroke='%231A6B35' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center;background-color:#FAFDF8;cursor:pointer;}
+#tnfg-page .reg-btn{width:100%;padding:18px;background:linear-gradient(135deg,#1A6B35 0%,#2A8A47 100%);color:#ffffff;font-weight:700;font-size:16px;letter-spacing:0.06em;text-transform:uppercase;border:none;border-radius:7px;cursor:pointer;margin-top:6px;box-shadow:0 8px 24px rgba(26,107,53,0.4);font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;}
+#tnfg-page .form-bonus{display:flex;align-items:flex-start;gap:8px;background:rgba(26,107,53,0.08);border:1px solid rgba(26,107,53,0.2);border-radius:6px;padding:12px 14px;margin-top:14px;font-size:13.5px;color:#2A5A2A;line-height:1.55;}
+#tnfg-page .form-privacy{text-align:center;font-size:12px;color:#6A8A6A;margin-top:10px;}
+#tnfg-page .gold-divider{position:relative;z-index:10;max-width:1120px;margin:0 auto;padding:0 28px;}
+#tnfg-page .gold-divider hr{border:none;border-top:1px solid rgba(200,150,42,0.15);}
+#tnfg-page .sec-label{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#E4B547;display:block;margin-bottom:10px;}
+#tnfg-page .sec-title{font-family:'Playfair Display',serif;font-size:clamp(26px,2.8vw,40px);font-weight:700;margin-bottom:40px;line-height:1.15;color:#ffffff;}
+#tnfg-page .agenda-sec{position:relative;z-index:10;max-width:1120px;margin:0 auto;padding:72px 28px;}
+#tnfg-page .agenda-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+#tnfg-page .agenda-card{background:linear-gradient(140deg,#1A5C30 0%,#0F3D1E 100%);border:1px solid rgba(42,138,71,0.4);border-radius:10px;padding:28px 24px;box-shadow:0 4px 24px rgba(0,0,0,0.3);}
+#tnfg-page .agenda-num{font-family:'Playfair Display',serif;font-size:52px;font-weight:900;color:#E4B547;line-height:1;margin-bottom:12px;}
+#tnfg-page .agenda-card h3{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;margin-bottom:10px;color:#ffffff;}
+#tnfg-page .agenda-card p{font-size:17px;color:rgba(255,255,255,0.9);line-height:1.7;margin:0;}
+#tnfg-page .drivers-sec{position:relative;z-index:10;background:rgba(26,107,53,0.06);border-top:1px solid rgba(26,107,53,0.2);border-bottom:1px solid rgba(26,107,53,0.2);padding:72px 28px;}
+#tnfg-page .drivers-inner{max-width:1120px;margin:0 auto;}
+#tnfg-page .drivers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+#tnfg-page .driver-col-title{text-align:center;font-size:22px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#E4B547;padding:36px 24px;border:1px solid rgba(200,150,42,0.4);border-radius:8px;background:linear-gradient(140deg,#1A5C30 0%,#0F3D1E 100%);}
+#tnfg-page .drivers-note{margin-top:48px;text-align:center;font-size:26px;font-weight:900;color:#ffffff;line-height:1.7;text-transform:uppercase;letter-spacing:0.01em;}
+#tnfg-page .who-sec{position:relative;z-index:10;max-width:1120px;margin:0 auto;padding:72px 28px;}
+#tnfg-page .who-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+#tnfg-page .who-list{list-style:none;padding:8px 16px;background:linear-gradient(135deg,#E4B547,#C8962A);border-radius:12px;}
+#tnfg-page .who-list li{display:flex;gap:12px;align-items:flex-start;padding:14px 0;border-bottom:1px solid rgba(0,0,0,0.1);font-size:18px;color:#0D2800;font-weight:600;line-height:1.5;}
+#tnfg-page .who-list li:last-child{border-bottom:none;}
+#tnfg-page .wc{color:#0D4A1F;font-size:20px;flex-shrink:0;margin-top:2px;}
+#tnfg-page .not-for{background:rgba(0,0,0,0.35);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:32px;}
+#tnfg-page .not-for h3{font-size:16px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:18px;}
+#tnfg-page .not-list{list-style:none;padding:0;}
+#tnfg-page .not-list li{display:flex;gap:10px;font-size:17px;color:rgba(255,255,255,0.8);padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.05);line-height:1.5;}
+#tnfg-page .not-list li:last-child{border-bottom:none;}
+#tnfg-page .xc{color:rgba(220,80,80,0.9);flex-shrink:0;font-size:18px;}
+#tnfg-page .bonus-sec{position:relative;z-index:10;background:rgba(26,107,53,0.06);border-top:1px solid rgba(26,107,53,0.2);padding:72px 28px;}
+#tnfg-page .bonus-inner{max-width:1120px;margin:0 auto;}
+#tnfg-page .bonus-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+#tnfg-page .bonus-card{background:linear-gradient(140deg,#1A5C30 0%,#0F3D1E 100%);border:1px solid rgba(42,138,71,0.4);border-radius:10px;padding:22px 20px;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,0.3);}
+#tnfg-page .bonus-tag{display:inline-block;background:#C8962A;color:#0D4A1F;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:3px 9px;border-radius:3px;margin-bottom:10px;}
+#tnfg-page .bonus-icon{font-size:28px;margin-bottom:10px;display:block;}
+#tnfg-page .bonus-card h3{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;margin-bottom:8px;color:#ffffff;}
+#tnfg-page .bonus-card p{font-size:13px;color:rgba(255,255,255,0.9);line-height:1.55;margin:0;}
+#tnfg-page .how-sec{position:relative;z-index:10;max-width:1120px;margin:0 auto;padding:72px 28px;}
+#tnfg-page .how-cta-box{margin-top:48px;background:linear-gradient(135deg,rgba(26,107,53,0.18) 0%,rgba(200,150,42,0.08) 100%);border:1px solid rgba(200,150,42,0.3);border-radius:14px;padding:48px;text-align:center;}
+#tnfg-page .how-cta-box h3{font-family:'Playfair Display',serif;font-size:clamp(22px,2.5vw,34px);font-weight:700;color:#F5D98A;margin-bottom:16px;line-height:1.2;}
+#tnfg-page .how-cta-box p{font-size:20px;color:rgba(255,255,255,0.9);max-width:560px;margin:0 auto 32px;line-height:1.75;}
+#tnfg-page .bottom-cta{position:relative;z-index:10;background:linear-gradient(135deg,rgba(26,107,53,0.2) 0%,rgba(6,10,6,0.95) 100%);border-top:1px solid rgba(26,107,53,0.25);padding:100px 28px;text-align:center;}
+#tnfg-page .bottom-cta h2{font-family:'Playfair Display',serif;font-size:clamp(36px,4.5vw,64px);font-weight:900;color:#F5D98A;margin-bottom:20px;line-height:1.05;}
+#tnfg-page .bottom-cta h2 em{font-style:italic;color:#E4B547;}
+#tnfg-page .bottom-cta p{font-size:20px;color:rgba(255,255,255,0.9);max-width:560px;margin:0 auto 48px;line-height:1.75;}
+#tnfg-page .cta-btn{display:inline-flex;align-items:center;gap:12px;background:linear-gradient(135deg,#1A6B35,#2A8A47);color:#ffffff;font-weight:800;font-size:18px;padding:26px 72px;border-radius:8px;border:none;cursor:pointer;text-transform:uppercase;letter-spacing:0.08em;box-shadow:0 14px 48px rgba(26,107,53,0.55);font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;text-decoration:none;}
+#tnfg-page .seats-note{font-size:17px;font-weight:700;color:#E4B547;margin-top:22px;}
+#tnfg-page .tnfg-footer{position:relative;z-index:10;background:rgba(0,0,0,0.5);border-top:1px solid rgba(200,150,42,0.1);padding:32px 28px;text-align:center;}
+#tnfg-page .footer-links{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-bottom:14px;}
+#tnfg-page .footer-links a{font-size:14px;color:#ffffff;text-decoration:none;}
+#tnfg-page .footer-copy{font-size:15px;color:#ffffff;margin-top:10px;font-style:italic;}
+#tnfg-page .fade-up{animation:tnfg-fadeUp .65s ease both;}
+#tnfg-page .d1{animation-delay:.1s;}#tnfg-page .d2{animation-delay:.2s;}#tnfg-page .d3{animation-delay:.35s;}
+@keyframes tnfg-fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:900px){
+  #tnfg-page .hero{grid-template-columns:1fr;gap:36px;padding:36px 20px 48px;}
+  #tnfg-page .agenda-grid,#tnfg-page .drivers-grid,#tnfg-page .who-grid,#tnfg-page .bonus-grid{grid-template-columns:1fr;}
+  #tnfg-page .form-box{position:static;}
+  #tnfg-page .cta-btn{padding:22px 40px;font-size:15px;}
 }
 </style>
 </head>
 <body>
-<div id="tnfg-ty">
+<div id="tnfg-page">
 <div class="bg-layer"></div>
 <div class="grid-layer"></div>
-<div class="top-bar"><span class="pulse"></span> You Are Registered - See You Saturday May 16</div>
+<div class="top-bar"><span class="pulse"></span> Free Live Training - Limited Seats Available - Register Now</div>
 <nav class="nav">
-  <div>
-    <div class="brand-name">True North Finance Group</div>
-    <div class="brand-sub">Strategic CFO Advisory - Predictable Cash Flow - Profitable Growth</div>
-  </div>
+  <div><div class="brand-name">True North Finance Group</div><div class="brand-sub">Strategic CFO Advisory - Predictable Cash Flow - Profitable Growth</div></div>
+  <div class="nav-tag">Free 1-Hour Webinar</div>
 </nav>
-<div class="confirm-wrap">
-  <div class="check-badge fade-up">&#10003;</div>
-  <div class="eyebrow fade-up d1">&#127881; You Are In</div>
-  <h1 class="fade-up d1">Your Seat Is<br><em>Confirmed.</em></h1>
-  <p class="confirm-sub fade-up d2">In just a few minutes, your confirmation email will be hitting your inbox with all the details for the upcoming training!</p>
-  <p class="confirm-spam fade-up d2">Check your <strong>spam folder</strong> so you don't miss this powerhouse event. If it doesn't arrive within 5-7 minutes, please reach out to us at <strong>noel@truenorthfinancegroup.com</strong>.</p>
-  <div class="event-box fade-up d2">
-    <h3>Your Event Details</h3>
-    <div class="event-row">
-      <div class="event-icon">&#128197;</div>
-      <div class="event-text"><strong>Saturday, May 16, 2026</strong><span>Mark your calendar now</span></div>
-    </div>
-    <div class="event-row">
-      <div class="event-icon">&#128336;</div>
-      <div class="event-text"><strong>9:00 PM EST / 6:00 PM PST</strong><span>45 minutes + Live Q&amp;A</span></div>
-    </div>
-    <div class="event-row">
-      <div class="event-icon">&#128249;</div>
-      <div class="event-text"><strong>Live via Zoom</strong><span>Zoom link will be sent to your email</span></div>
-    </div>
-    <div class="event-row">
-      <div class="event-icon">&#127873;</div>
-      <div class="event-text"><strong>4 Free Bonuses Included</strong><span>Delivered instantly to your inbox</span></div>
-    </div>
-  </div>
-</div>
-<div class="bonuses-wrap fade-up d3">
-  <h2>What Is Already On Its Way to You</h2>
-  <div class="bonus-list">
-    <div class="bonus-item">
-      <span class="bonus-num">B1</span>
-      <div><h4>The 16 Parts of Your Business That Drive Revenue, Profit and Cash Flow</h4><p>The complete financial framework from the training - reference it forever.</p></div>
-    </div>
-    <div class="bonus-item">
-      <span class="bonus-num">B2</span>
-      <div><h4>Financial Health Scorecard</h4><p>Diagnose your biggest financial leak in 3 minutes. Know exactly where to focus.</p></div>
-    </div>
-  </div>
-</div>
-<div class="gold-divider fade-up d3"><hr></div>
-<div class="upsell-wrap fade-up d4">
-  <div class="upsell-box">
-    <span class="upsell-label">While You Wait for May 16</span>
-    <h2>Want Answers to Your Specific Numbers Right Now?</h2>
-    <p>Skip the wait. Book a Complimentary 30-minute Right-Fit Call with our Certified CFO Advisor and get a direct read on where your business stands financially - before the webinar even starts.</p>
-    <ul class="upsell-list">
-      <li><span class="uc">&#10022;</span> Identify your single biggest cash flow leak</li>
-      <li><span class="uc">&#10022;</span> Get a clear picture of where you stand across the 16 drivers</li>
-      <li><span class="uc">&#10022;</span> Find out if a CFO Advisory is the right move for your business</li>
-      <li><span class="uc">&#10022;</span> 30 minutes. No pitch. No pressure. Just clarity.</li>
+<section class="hero">
+  <div>
+    <div class="eyebrow fade-up"><span class="blink"></span> Free 1-Hour Live Webinar via Zoom</div>
+    <h1 class="fade-up d1">Precision Financial Strategy<br><em>for $500K-$10M Businesses</em></h1>
+    <p class="hero-sub fade-up d2">Most business owners are working hard and watching profit disappear. In this free 1-hour training, we reveal the 16 financial drivers that shape every dollar in your business - and exactly how to fix the ones that are costing you.</p>
+    <ul class="learn-list fade-up d2">
+      <li><span class="lc">&#10022;</span> Why most small businesses fail - and the single biggest cause nobody talks about</li>
+      <li><span class="lc">&#10022;</span> The difference between owning a machine vs. owning a job (86.3% of owners are stuck in the wrong one)</li>
+      <li><span class="lc">&#10022;</span> The 3 sources of money in every business - and which one you must master to survive</li>
+      <li><span class="lc">&#10022;</span> All 16 financial drivers mapped out across Revenue, Profit, and Cash Flow</li>
+      <li><span class="lc">&#10022;</span> The 3 fastest levers to move the needle for a $500K-$10M business - implementable this week</li>
+      <li><span class="lc">&#10022;</span> Live Q&amp;A - get real answers to your specific financial situation</li>
     </ul>
-    <a href="https://calendly.com/noel-truenorthfinancegroup/20-minute-right-fit-call" target="_blank" class="cal-btn">&#128197; Book My Free Right-Fit Call</a>
-    <div class="cal-note">Available evenings after 5PM EST.</div>
+    <div class="proof-row fade-up d3">
+      <div class="proof-item">&#10003; 100% Free</div>
+      <div class="proof-item">&#10003; Live Q&amp;A included</div>
+      <div class="proof-item">&#10003; Replay available</div>
+    </div>
   </div>
-</div>
+  <div class="fade-up d2">
+    <div class="form-box">
+      <div class="countdown-wrap">
+        <div class="cd-label">Training Starts In</div>
+        <div class="cd-units">
+          <div class="cd-unit"><span class="cd-num" id="cd-d">00</span><span class="cd-sub">Days</span></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit"><span class="cd-num" id="cd-h">00</span><span class="cd-sub">Hrs</span></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit"><span class="cd-num" id="cd-m">00</span><span class="cd-sub">Min</span></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit"><span class="cd-num" id="cd-s">00</span><span class="cd-sub">Sec</span></div>
+        </div>
+      </div>
+      <div class="form-title">Reserve Your Free Seat</div>
+      <div class="form-date">Next session: <strong>Saturday, May 16 - 9:00 PM EST / 6:00 PM PST</strong></div>
+      <div class="date-block"><div class="icon">&#128197;</div><div><h4>Saturday, May 16</h4><p>9:00 PM EST - 6:00 PM PST - 45 Min + Live Q&amp;A - Zoom</p></div></div>
+      <form id="tnfg-form" method="post" action="https://systeme.io/embedded/40175821/subscription">
+        <div class="field"><label>First Name</label><input type="text" name="fields[first_name]" placeholder="e.g. Michael" required></div>
+        <div class="field"><label>Business Email</label><input type="email" name="email" placeholder="you@yourbusiness.com" required></div>
+        <div class="field"><label>Company Name</label><input type="text" name="fields[company]" placeholder="Your Business Name"></div>
+        <div class="field"><label>Annual Revenue</label>
+          <select name="fields[annual_revenue]">
+            <option value="" disabled selected>Select your range</option>
+            <option value="500K-1M">$500K - $1M</option>
+            <option value="1M-3M">$1M - $3M</option>
+            <option value="3M-5M">$3M - $5M</option>
+            <option value="5M-10M">$5M - $10M</option>
+            <option value="10M+">$10M+</option>
+          </select>
+        </div>
+        <div class="field"><label>Biggest Financial Challenge Right Now</label>
+          <select name="fields[challenge]">
+            <option value="" disabled selected>Select your challenge</option>
+            <option value="Cash flow unpredictability">Cash flow unpredictability</option>
+            <option value="Profit margins shrinking">Profit margins shrinking</option>
+            <option value="Cannot get a business loan">Cannot get a business loan</option>
+            <option value="No financial visibility">No financial visibility</option>
+            <option value="Tax surprises">Tax surprises</option>
+            <option value="Ready to scale but no roadmap">Ready to scale but no roadmap</option>
+          </select>
+        </div>
+        <button type="submit" class="reg-btn">&#9989; Reserve My Free Seat Now</button>
+      </form>
+      <div class="form-bonus"><span>&#127873;</span><span>Everyone who registers gets the <strong>15 Financial Truths + Financial Health Scorecard + 16 Drivers Guide + Full Replay</strong> delivered instantly.</span></div>
+      <div class="form-privacy">&#128274; No spam. Unsubscribe anytime.</div>
+    </div>
+  </div>
+</section>
+<div class="gold-divider"><hr></div>
+<section class="agenda-sec">
+  <span class="sec-label">Training Curriculum</span>
+  <h2 class="sec-title">What We Cover in 60 Minutes</h2>
+  <div class="agenda-grid">
+    <div class="agenda-card"><div class="agenda-num">01</div><h3>Why Most Businesses Fail</h3><p>20% fail within the first year. 50% are gone by year 5. Learn the real reasons - and why cash is the only thing that solves every problem in your business.</p></div>
+    <div class="agenda-card"><div class="agenda-num">02</div><h3>Own a Machine. Not a Job.</h3><p>86.3% of business owners make less than $100K per year. Learn the difference between a business that works for you and a stressful job you happen to own.</p></div>
+    <div class="agenda-card"><div class="agenda-num">03</div><h3>The 3 Sources of Money</h3><p>Debt, owner investment, and from the business itself. One of these builds real wealth and gives you back your time. The other two are traps most owners stay stuck in.</p></div>
+    <div class="agenda-card"><div class="agenda-num">04</div><h3>The 16 Profit Drivers</h3><p>A complete walkthrough of every lever in your business across Revenue, Profit, and Cash Flow. Live self-assessment you score in real time during the training.</p></div>
+    <div class="agenda-card"><div class="agenda-num">05</div><h3>Your 3 Quick Wins</h3><p>The fastest financial moves for a $500K-$10M business. You will leave knowing which specific drivers to fix first - and what to do about them this week.</p></div>
+    <div class="agenda-card"><div class="agenda-num">06</div><h3>Live Q&amp;A</h3><p>Submit questions throughout the session. Get honest answers - no canned responses. Real CFO thinking applied directly to your business situation.</p></div>
+  </div>
+</section>
+<div class="gold-divider"><hr></div>
+<section class="drivers-sec">
+  <div class="drivers-inner">
+    <span class="sec-label" style="text-align:center;display:block;">The Full Framework</span>
+    <h2 class="sec-title" style="text-align:center;">The 16 Financial Drivers You Need to Watch Like a Hawk</h2>
+    <div class="drivers-grid">
+      <div><div class="driver-col-title">5 Revenue Drivers</div></div>
+      <div><div class="driver-col-title">5 Profit Drivers</div></div>
+      <div><div class="driver-col-title">6 Cash Flow Drivers</div></div>
+    </div>
+    <p class="drivers-note">IMPROVE JUST ONE DRIVER AND YOU WILL SEE RESULTS.<br>IMPROVE TWO OR MORE AND THE RESULTS ARE DRAMATIC.<br><span style="color:#E4B547">IMPROVE ALL 16 - AND YOUR BUSINESS BECOMES UNSTOPPABLE!</span></p>
+  </div>
+</section>
+<section class="who-sec">
+  <span class="sec-label">Is This For You?</span>
+  <h2 class="sec-title" style="margin-bottom:28px;">This Training Is Built For You If...</h2>
+  <div class="who-grid" style="align-items:start;">
+    <div>
+      <ul class="who-list">
+        <li><span class="wc">&#10022;</span> You are running a business between $500K and $10M in annual revenue</li>
+        <li><span class="wc">&#10022;</span> You have a bookkeeper or accountant but no real financial strategy</li>
+        <li><span class="wc">&#10022;</span> Cash flow keeps you up at night even when sales are strong</li>
+        <li><span class="wc">&#10022;</span> You are making decisions without a clear financial picture</li>
+        <li><span class="wc">&#10022;</span> You want to scale but do not know if the numbers support it</li>
+        <li><span class="wc">&#10022;</span> You want Fortune 500-level CFO strategy at a fraction of the cost</li>
+      </ul>
+    </div>
+    <div style="padding-top:0;">
+      <div class="not-for" style="margin-top:0;">
+        <h3>This Is NOT For You If...</h3>
+        <ul class="not-list">
+          <li><span class="xc">&#10005;</span> You are still pre-revenue or in the idea stage</li>
+          <li><span class="xc">&#10005;</span> You already have a full-time CFO on staff</li>
+          <li><span class="xc">&#10005;</span> You are not willing to look honestly at your numbers</li>
+          <li><span class="xc">&#10005;</span> You are looking for a get-rich-quick financial hack</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bonus-sec">
+  <div class="bonus-inner">
+    <h2 class="sec-title" style="text-align:center;margin-bottom:36px;">Everyone Who Registers Gets These Free</h2>
+    <div class="bonus-grid">
+      <div class="bonus-card"><span class="bonus-tag">Bonus 1</span><span class="bonus-icon">&#128203;</span><h3>The 15 Financial Truths That Make or Break an SMB</h3><p>What every owner needs to know before the next cash crunch hits. Straight talk. No fluff.</p></div>
+      <div class="bonus-card"><span class="bonus-tag">Bonus 2</span><span class="bonus-icon">&#128200;</span><h3>Financial Health Scorecard</h3><p>Instantly diagnose where your business is leaking money. Score your finances and know exactly where to focus first. Takes 3 minutes.</p></div>
+      <div class="bonus-card"><span class="bonus-tag">Bonus 3</span><span class="bonus-icon">&#128218;</span><h3>The 16 Parts of Your Business That Drive Revenue, Profit and Cash Flow</h3><p>The complete framework from the training - yours to keep and reference forever. Delivered the moment you register.</p></div>
+      <div class="bonus-card"><span class="bonus-tag">Bonus 4</span><span class="bonus-icon">&#127909;</span><h3>Full Training Replay Access</h3><p>Cannot make it live? No problem. The full replay is delivered to your inbox within 24 hours.</p></div>
+    </div>
+  </div>
+</section>
+<section class="how-sec">
+  <span class="sec-label" style="text-align:center;display:block;">The True North Process</span>
+  <h2 class="sec-title" style="text-align:center;">Find Out How We Transform Your Business Into a Money-Making Machine</h2>
+  <div class="how-cta-box">
+    <h3>Ready to Stop Owning a Job and Start Owning a Machine?</h3>
+    <p>Join us live on Saturday, May 16 and walk away with the complete financial framework, your personal scorecard, and a clear action plan - all free.</p>
+  </div>
+</section>
+<section class="bottom-cta">
+  <h2>Your Business Deserves<br><em>Financial Clarity.</em></h2>
+  <p>One hour. Free. Walk away knowing exactly where your business stands - and what to do next.</p>
+  <a href="#tnfg-form" class="cta-btn">&#128197; Reserve My Free Seat Now</a>
+  <div class="seats-note">&#9889; Seats are limited to keep Q&amp;A intimate and valuable - register now to secure yours.</div>
+</section>
 <div class="tnfg-footer">
-  <div class="footer-links">
-    <a href="https://truenorthfinancegroup.com/">truenorthfinancegroup.com</a>
-    <a href="mailto:noel@truenorthfinancegroup.com">noel@truenorthfinancegroup.com</a>
-  </div>
+  <div class="footer-links"><a href="https://truenorthfinancegroup.com/">truenorthfinancegroup.com</a><a href="mailto:noel@truenorthfinancegroup.com">noel@truenorthfinancegroup.com</a></div>
   <div class="footer-copy">Find Your True North. Find Your Cash Flow.</div>
 </div>
 </div>
+<script>
+(function(){
+  // Countdown timer to May 16 2026 9PM EST
+  var target=new Date('2026-05-16T21:00:00-04:00').getTime();
+  function tick(){
+    var diff=target-Date.now();
+    var d=document.getElementById('cd-d');
+    if(!d)return;
+    if(diff<=0){var w=document.querySelector('#tnfg-page .countdown-wrap');if(w)w.innerHTML='<div style="color:#E4B547;font-weight:700;font-size:14px;padding:8px 0;">Live Now - Join Immediately</div>';return;}
+    d.textContent=String(Math.floor(diff/86400000)).padStart(2,'0');
+    document.getElementById('cd-h').textContent=String(Math.floor((diff%86400000)/3600000)).padStart(2,'0');
+    document.getElementById('cd-m').textContent=String(Math.floor((diff%3600000)/60000)).padStart(2,'0');
+    document.getElementById('cd-s').textContent=String(Math.floor((diff%60000)/1000)).padStart(2,'0');
+  }
+  tick();setInterval(tick,1000);
+
+  // Form submit - post to Systeme then redirect to thank you page
+  var form=document.getElementById('tnfg-form');
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var data=new FormData(form);
+      fetch('https://systeme.io/embedded/40175821/subscription',{method:'POST',body:data,mode:'no-cors'})
+      .finally(function(){
+        window.location.href='https://noel-truenorthfg.systeme.io/welcome';
+      });
+    });
+  }
+})();
+</script>
 </body>
 </html>
