@@ -158,6 +158,7 @@
       <div class="form-date">Next session: <strong>Saturday, May 16 - 9:00 PM EST / 6:00 PM PST</strong></div>
       <div class="date-block"><div class="icon">&#128197;</div><div><h4>Saturday, May 16</h4><p>9:00 PM EST - 6:00 PM PST - 45 Min + Live Q&amp;A - Zoom</p></div></div>
       <form id="tnfg-form" method="post" action="https://systeme.io/embedded/40175821/subscription">
+        <input type="hidden" name="redirect_to" value="https://cfo.truenorthfinancegroup.com/welcome">
         <div class="field"><label>First Name</label><input type="text" name="fields[first_name]" placeholder="e.g. Michael" required></div>
         <div class="field"><label>Business Email</label><input type="email" name="email" placeholder="you@yourbusiness.com" required></div>
         <div class="field"><label>Company Name</label><input type="text" name="fields[company]" placeholder="Your Business Name"></div>
@@ -288,18 +289,7 @@
   }
   tick();setInterval(tick,1000);
 
-  // Form submit - post to Systeme then redirect to thank you page
-  var form=document.getElementById('tnfg-form');
-  if(form){
-    form.addEventListener('submit',function(e){
-      e.preventDefault();
-      var data=new FormData(form);
-      fetch('https://systeme.io/embedded/40175821/subscription',{method:'POST',body:data,mode:'no-cors'})
-      .finally(function(){
-        window.location.href='https://cfo.truenorthfinancegroup.com/welcome';
-      });
-    });
-  }
+  // Form submits natively to Systeme - redirect handled by redirect_to field
 })();
 </script>
 </body>
